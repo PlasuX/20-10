@@ -1,0 +1,23 @@
+@use './stack/1.mainscreen/main.scss';
+
+* {
+    scrollbar-width: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overscroll-behavior: none;
+}
+
+#root {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+}

@@ -1,3 +1,13 @@
-const a = (i: number) => {
-    return i*i
-}
+/*
+window.addEventListener("DOMContentLoaded", () => {
+    // DOM ready! Images, frames, and other subresources are still downloading.
+});
+
+window.addEventListener("load", () => {
+    // Fully loaded!
+});
+*/
+
+window.addEventListener("load", () => {
+    
+});
