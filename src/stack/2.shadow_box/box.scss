@@ -1,0 +1,13 @@
+#shadow_box {
+    user-select: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 0;
+    width: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: height .3s cubic-bezier(0,1,0,1), width .3s cubic-bezier(0,1,0,1);
+}

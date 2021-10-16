@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 #main {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgb(255, 255, 255);
+    //background: rgb(255, 255, 255);
     //transition: 100ms linear;
     overflow: hidden;
 
@@ -17,6 +19,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
     }
 
     #listmainImg {
@@ -26,11 +30,13 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
         .mainImg {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            height: fit-content;
 
             &::before {
                 content: '';
@@ -47,17 +53,129 @@
             }
 
             img {
-                border-radius: 5px
+                border-radius: 5px;
+                width: 75px;
+                -webkit-user-drag: none;
+                user-drag: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                user-select: none;
             }
         }
 
         #mainImg1 {
-            top: calc(50% + 75px);
-            left: 75%;
+            top: calc(50% + 150px);
+            left: 50%;
+        }
 
-            img {
-                width: 75px;
+        #mainImg2 {
+            top: calc(50% - 150px);
+            left: 50%;
+        }
+
+        #mainImg3 {
+            top: 50%;
+            left: calc(50% + 150px);
+        }
+
+        #mainImg4 {
+            top: 50%;
+            left: calc(50% - 150px);
+        }
+
+        #mainImg5 {
+            top: calc(50% + 100px);
+            left: calc(50% + 100px);
+        }
+
+        #mainImg6 {
+            top: calc(50% + 100px);
+            left: calc(50% - 100px);
+        }
+
+        #mainImg7 {
+            top: calc(50% - 100px);
+            left: calc(50% + 100px);
+
+            &::before {
+                background: #dce0a4;
             }
         }
+
+        #mainImg8 {
+            top: calc(50% + 300px);
+            left: 50%;
+        }
+
+        #mainImg9 {
+            top: calc(50% - 300px);
+            left: 50%;
+        }
+
+        #mainImg10 {
+            top: 50%;
+            left: calc(50% + 300px);
+        }
+
+        #mainImg11 {
+            top: 50%;
+            left: calc(50% - 300px);
+        }
+
+        #mainImg12 {
+            top: calc(50% + 250px);
+            left: calc(50% + 150px);
+        }
+
+        #mainImg13 {
+            top: calc(50% + 250px);
+            left: calc(50% - 150px);
+        }
+
+        #mainImg14 {
+            top: calc(50% - 250px);
+            left: calc(50% + 150px);
+        }
+
+        #mainImg15 {
+            top: calc(50% - 250px);
+            left: calc(50% - 150px);
+            img {
+                height: 75px;
+                width: fit-content;
+            }
+        }
+
+        #mainImg16 {
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+        }
+
+        #mainImg17 {
+            top: calc(50% - 150px);
+            left: calc(50% - 250px);
+
+            img {
+                height: 75px;
+                width: fit-content;
+            }
+        }
+
+        #mainImg18 {
+            top: calc(50% + 150px);
+            left: calc(50% + 250px);
+        }
+
+        #mainImg19 {
+            top: calc(50% + 150px);
+            left: calc(50% - 250px);
+        }
+
+        #mainImg20 {
+            top: calc(50% - 150px);
+            left: calc(50% + 250px);
+        }
+
+        // #mainImg21 chưa có ảnh -> thu thảo
     }
 }

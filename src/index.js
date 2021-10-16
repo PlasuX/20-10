@@ -20,14 +20,14 @@ var getId = function (d) {
 var typewrite = getId("typewrite");
 var listmainImg = getId("listmainImg");
 //
-document.addEventListener('mousedown', function (e) {
+getId('main').addEventListener('mousedown', function (e) {
     oldPos = [e.clientX, e.clientY];
     mainTop = typewrite.offsetTop;
     mainLeft = typewrite.offsetLeft;
     listmainImgTop = listmainImg.offsetTop;
     listmainImgLeft = listmainImg.offsetLeft;
 });
-document.addEventListener('touchstart', function (e) {
+getId('main').addEventListener('touchstart', function (e) {
     oldPos = [e.touches[0].clientX, e.touches[0].clientY];
     mainTop = typewrite.offsetTop;
     mainLeft = typewrite.offsetLeft;
@@ -38,38 +38,37 @@ document.addEventListener('touchstart', function (e) {
 function drag(e) {
     newPos = [e.clientX, e.clientY];
     if (oldPos.length != 0) {
-        typewrite.style.top = mainTop - (oldPos[1] - newPos[1]) / 2 + "px";
-        typewrite.style.left = mainLeft - (oldPos[0] - newPos[0]) / 2 + "px";
-        listmainImg.style.top = listmainImgTop - (oldPos[1] - newPos[1]) + "px";
-        listmainImg.style.left = listmainImgLeft - (oldPos[0] - newPos[0]) + "px";
+        typewrite.style.top = mainTop - (oldPos[1] - newPos[1]) / 4 + "px";
+        typewrite.style.left = mainLeft - (oldPos[0] - newPos[0]) / 4 + "px";
+        listmainImg.style.top = listmainImgTop - (oldPos[1] - newPos[1]) / 2 + "px";
+        listmainImg.style.left = listmainImgLeft - (oldPos[0] - newPos[0]) / 2 + "px";
     }
 }
 function dragMobile(e) {
     newPos = [e.touches[0].clientX, e.touches[0].clientY];
     if (oldPos.length != 0) {
-        typewrite.style.top = mainTop - (oldPos[1] - newPos[1]) / 2 + "px";
-        typewrite.style.left = mainLeft - (oldPos[0] - newPos[0]) / 2 + "px";
-        listmainImg.style.top = listmainImgTop - (oldPos[1] - newPos[1]) + "px";
-        listmainImg.style.left = listmainImgLeft - (oldPos[0] - newPos[0]) + "px";
+        typewrite.style.top = mainTop - (oldPos[1] - newPos[1]) / 4 + "px";
+        typewrite.style.left = mainLeft - (oldPos[0] - newPos[0]) / 4 + "px";
+        listmainImg.style.top = listmainImgTop - (oldPos[1] - newPos[1]) / 2 + "px";
+        listmainImg.style.left = listmainImgLeft - (oldPos[0] - newPos[0]) / 2 + "px";
     }
 }
 //
-document.addEventListener('mousemove', drag);
-document.addEventListener('touchmove', dragMobile);
+getId('main').addEventListener('mousemove', drag);
+getId('main').addEventListener('touchmove', dragMobile);
 //
-document.addEventListener('mouseup', function () {
+getId('main').addEventListener('mouseup', function () {
     oldPos = [];
 });
-document.addEventListener('touchend', function () {
+getId('main').addEventListener('touchend', function () {
     oldPos = [];
 });
 //
 var mainImg = document.getElementsByClassName('mainImg');
-var _loop_1 = function (i) {
-    getId("mainImg" + [i + 1]).addEventListener("click", function () {
-        console.log(getId("mainImg" + [i + 1]) + " is clicked");
-    });
-};
 for (var i = 0; i < mainImg.length; i++) {
-    _loop_1(i);
+    getId("mainImg" + [i + 1]).addEventListener("click", function () {
+        //console.log(mainImg[i] , " is clicked");
+        getId('shadow_box').style.height = "100%";
+        getId('shadow_box').style.width = "100%";
+    });
 }

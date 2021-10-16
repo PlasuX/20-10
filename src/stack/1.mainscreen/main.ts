@@ -9,15 +9,16 @@ const getId: any = (d: string) => {
 const typewrite = getId("typewrite");
 const listmainImg = getId("listmainImg");
 //
-document.addEventListener('mousedown', (e: MouseEvent) => {
+getId('main').addEventListener('mousedown', (e: MouseEvent) => {
     oldPos = [e.clientX, e.clientY];
     mainTop = typewrite.offsetTop;
     mainLeft = typewrite.offsetLeft;
     listmainImgTop = listmainImg.offsetTop;
     listmainImgLeft = listmainImg.offsetLeft;
+
 })
 
-document.addEventListener('touchstart', (e: TouchEvent) => {
+getId('main').addEventListener('touchstart', (e: TouchEvent) => {
     oldPos = [e.touches[0].clientX, e.touches[0].clientY];
     mainTop = typewrite.offsetTop;
     mainLeft = typewrite.offsetLeft;
@@ -28,38 +29,39 @@ document.addEventListener('touchstart', (e: TouchEvent) => {
 function drag(e: MouseEvent): void {
     newPos = [e.clientX, e.clientY];
     if (oldPos.length != 0) {
-        typewrite.style.top = `${mainTop - (oldPos[1] - newPos[1]) / 2}px`;
-        typewrite.style.left = `${mainLeft - (oldPos[0] - newPos[0]) / 2}px`;
-        listmainImg.style.top = `${listmainImgTop - (oldPos[1] - newPos[1])}px`;
-        listmainImg.style.left = `${listmainImgLeft - (oldPos[0] - newPos[0])}px`;
+        typewrite.style.top = `${mainTop - (oldPos[1] - newPos[1]) / 4}px`;
+        typewrite.style.left = `${mainLeft - (oldPos[0] - newPos[0]) / 4}px`;
+        listmainImg.style.top = `${listmainImgTop - (oldPos[1] - newPos[1]) / 2}px`;
+        listmainImg.style.left = `${listmainImgLeft - (oldPos[0] - newPos[0]) / 2}px`;
     }
 }
 
 function dragMobile(e: TouchEvent): void {
     newPos = [e.touches[0].clientX, e.touches[0].clientY];
     if (oldPos.length != 0) {
-        typewrite.style.top = `${mainTop - (oldPos[1] - newPos[1]) / 2}px`;
-        typewrite.style.left = `${mainLeft - (oldPos[0] - newPos[0]) / 2}px`;
-        listmainImg.style.top = `${listmainImgTop - (oldPos[1] - newPos[1])}px`;
-        listmainImg.style.left = `${listmainImgLeft - (oldPos[0] - newPos[0])}px`;
+        typewrite.style.top = `${mainTop - (oldPos[1] - newPos[1]) / 4}px`;
+        typewrite.style.left = `${mainLeft - (oldPos[0] - newPos[0]) / 4}px`;
+        listmainImg.style.top = `${listmainImgTop - (oldPos[1] - newPos[1]) / 2}px`;
+        listmainImg.style.left = `${listmainImgLeft - (oldPos[0] - newPos[0]) / 2}px`;
     }
 }
 //
-document.addEventListener('mousemove', drag)
-document.addEventListener('touchmove', dragMobile)
+getId('main').addEventListener('mousemove', drag)
+getId('main').addEventListener('touchmove', dragMobile)
 //
-document.addEventListener('mouseup', () => {
+getId('main').addEventListener('mouseup', () => {
     oldPos = [];
 })
 
-document.addEventListener('touchend', () => {
+getId('main').addEventListener('touchend', () => {
     oldPos = [];
 })
 //
-
-const mainImg = document.getElementsByClassName('mainImg');
+const mainImg: any = document.getElementsByClassName('mainImg');
 for (let i = 0; i < mainImg.length; i++) {
     getId(`mainImg${[i+1]}`).addEventListener("click", () => {
-        console.log(getId(`mainImg${[i+1]}`) + " is clicked")
-    })
+        //console.log(mainImg[i] , " is clicked");
+        getId('shadow_box').style.height = "100%";
+        getId('shadow_box').style.width = "100%";
+    });
 }

@@ -1,4 +1,6 @@
 @use './stack/1.mainscreen/main.scss';
+@use './stack/2.shadow_box/box.scss';
+
 
 * {
     scrollbar-width: none;
@@ -19,5 +21,5 @@ html, body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: white;
+    background: rgb(255, 255, 255);
 }
