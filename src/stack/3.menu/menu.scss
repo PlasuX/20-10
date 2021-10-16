@@ -1,0 +1,31 @@
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background: rgb(255, 255, 255);
+
+    #menu_button {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 96px;
+        width: 100%;
+
+        #menu_button_icon {
+            position: absolute;
+            top: 24px;
+            right: 14px;
+        }
+    }
+
+    img {
+        transition: transform .3s cubic-bezier(0, 1, 0, 1);
+    }
+
+    img:active {
+        transform: scale(0.875)
+    }
+}

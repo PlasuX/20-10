@@ -67,12 +67,11 @@ getId('main').addEventListener('touchend', function () {
 var mainImg = document.getElementsByClassName('mainImg');
 var _loop_1 = function (i) {
     getId("mainImg" + [i + 1]).addEventListener("click", function () {
-        //console.log(mainImg[i] , " is clicked");
         getId('shadow_box').style.height = "100%";
         getId('shadow_box').style.width = "100%";
-        getId('box_content').style.display = "block";
+        //getId('box_content').style.display = "block";
         // up next: opacity phan box_content + time out de animation cua shadow_box load xong
-        switch (i + 1) {
+        switch (i + 1) { // innerHTML let's go
             case 1:
                 console.log("huray");
                 break;
