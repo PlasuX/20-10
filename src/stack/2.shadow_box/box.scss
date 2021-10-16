@@ -3,11 +3,18 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    height: 0;
-    width: 0;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
+    height: 100%; //0%
+    width: 100%; //0%
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(15px);
     transform: translate(-50%, -50%);
-    pointer-events: none;
     transition: height .3s cubic-bezier(0,1,0,1), width .3s cubic-bezier(0,1,0,1);
+    #box_content {
+        // display: none;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
 }

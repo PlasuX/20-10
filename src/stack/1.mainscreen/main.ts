@@ -57,11 +57,3 @@ getId('main').addEventListener('touchend', () => {
     oldPos = [];
 })
 //
-const mainImg: any = document.getElementsByClassName('mainImg');
-for (let i = 0; i < mainImg.length; i++) {
-    getId(`mainImg${[i+1]}`).addEventListener("click", () => {
-        //console.log(mainImg[i] , " is clicked");
-        getId('shadow_box').style.height = "100%";
-        getId('shadow_box').style.width = "100%";
-    });
-}
