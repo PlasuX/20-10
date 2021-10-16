@@ -30,14 +30,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
         .mainImg {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            height: fit-content;
-
+            transition: transform .3s cubic-bezier(0, 1, 0, 1);
             &::before {
                 content: '';
                 position: absolute;
@@ -62,7 +60,9 @@
                 user-select: none;
             }
         }
-
+        .mainImg:active {
+            transform: translate(-50%, -50%) scale(0.875);
+        }
         #mainImg1 {
             top: calc(50% + 150px);
             left: 50%;
