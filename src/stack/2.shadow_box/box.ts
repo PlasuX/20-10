@@ -69,4 +69,9 @@ for (let i = 0; i < mainImg.length; i++) {
                 break;
         }
     });
-}
+};
+
+getId("back").addEventListener("click", () => {
+    getId('shadow_box').style.height = "0";
+    getId('shadow_box').style.width = "0";
+})

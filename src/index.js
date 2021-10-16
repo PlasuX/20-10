@@ -119,3 +119,14 @@ var _loop_1 = function (i) {
 for (var i = 0; i < mainImg.length; i++) {
     _loop_1(i);
 }
+;
+getId("back").addEventListener("click", function () {
+    getId('shadow_box').style.height = "0";
+    getId('shadow_box').style.width = "0";
+});
+getId("menu").addEventListener("click", function () {
+    getId("menu_big").style.height = "100%";
+});
+getId("menu_button_icon").addEventListener("click", function () {
+    getId("menu_big").style.height = "0%";
+});
