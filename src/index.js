@@ -7,9 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("load", () => {
     // Fully loaded!
 });
-*/
-window.addEventListener("load", function () {
-});
+*/ 
 var newPos = [];
 var oldPos = [];
 var mainTop, mainLeft, listmainImgTop, listmainImgLeft;

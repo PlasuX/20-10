@@ -7,7 +7,3 @@ window.addEventListener("load", () => {
     // Fully loaded!
 });
 */
-
-window.addEventListener("load", () => {
-    
-});
