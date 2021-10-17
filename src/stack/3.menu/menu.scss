@@ -36,6 +36,21 @@
         left: 14px;
         height: calc(100% - 192px);
         width: calc(100% - 28px);
-        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+        }
+    }
+    #note_menu {
+        position: absolute;
+        bottom: 24px;
+        left: 14px;
+        font-family: "Roboto",sans-serif;
+        color:rgb(29, 35, 46);
+        font-size: 14px;
+        max-width: calc(100% - 28px);
     }
 }

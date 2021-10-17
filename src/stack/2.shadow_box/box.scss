@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&family=Roboto&display=swap');
 
 #shadow_box {
     user-select: none;
     position: fixed;
     top: 50%;
     left: 50%;
-    height: 0%; //0%
-    width: 0%; //0%
-    //background: rgba(0, 0, 0, 0.9);
+    height: 70%; //0%
+    width: 70%; //0%
+    pointer-events: none;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
     //backdrop-filter: blur(15px);
     transform: translate(-50%, -50%);
-    transition: height .3s cubic-bezier(0, 1, 0, 1), width .3s cubic-bezier(0, 1, 0, 1);
+    transition: height 1s cubic-bezier(0, 1, 0, 1), width 1s cubic-bezier(0, 1, 0, 1), opacity 1s cubic-bezier(0, 1, 0, 1) !important;
     overflow-x: hidden;
     overflow-y: scroll;
     //background: url('./stack/2.shadow_box/img2/1. Hoàng Mai Anh2.jpg') no-repeat center center; // khong hieu sao khong dung fixed ?? // Background -> day
@@ -86,6 +89,17 @@
             right: 20px;
             overflow-y: scroll;
             overflow-x: hidden;
+            color: white;
+            .author{
+                margin-bottom: 12px;
+                font-family: 'Raleway', sans-serif;
+                font-size: 20px;
+            }
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                line-height: 22px;
+            }
         }
     }
 }

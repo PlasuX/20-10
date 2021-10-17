@@ -1,10 +1,108 @@
 const mainImg: any = document.getElementsByClassName('mainImg');
+const wish_content =  [
+    `<div class="author">From @vtd with love <3</div>
+    <p>"Chúc các bạn nữ luôn xinh đẹp, vui vẻ luôn đón nhận nhiều niềm vui trong cuộc sống"</p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Không thể đếm xuể hết công lao, vai trò to lớn của các "phái đẹp" đối với các bạn nam tụi mình. Nhờ có các cậu, mỗi ngày đến trường đối với bọn tớ đều là những ngày đẹp nhất trong cuộc đời. 22 người (tính cả cô) là 22 vẻ đẹp và nét cá tính riêng biệt,mỗi người đều có sức hấp dẫn,tài năng,có những phẩm chất cao quý mà bọn con trai chúng tớ đáng ngưỡng mộ,học tập và noi theo.Các cậu và cô chính là chỗ dựa,là động lực để chúng tớ có niềm cảm hứng học tập,sống tốt hơn và hoàn thiện bản thân mình mỗi ngày... Nhân ngày Phụ nữ Việt Nam 20/10,tớ chúc các cậu và cô giáo ngày càng xinh đẹp,nữ tính,học giỏi hơn, và đạt được những ước mơ mà mình mong muốn và đặc biệt là vẫn luôn luôn giữ được sự lạc quan,hồn nhiên,yêu đời vốn có của mình.Tớ mong các cậu vẫn luôn sát cánh,đồng hành,giúp đỡ bọn tớ trong thời gian khó khăn sắp tới. Girls are the best friends!”</p>`,
+
+    `<div class="author">From @ngmt with love <3</div>
+    <p>“Chúc các gái lớp A2-k13 một ngày 20-10 tuyet voi và chúc các b sẽ luôn tươi tắn , xinh xắn , mạnh mẽ , tự tin và cá tính mọi lúc mọi nơi và mọi thời điểm.”</p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Chúc các bạn nữ luôn luôn xinh đẹp, học giỏi và trúng vào trường đại học mong muốn nhé <3”</p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Chúc các bạn nữ luôn luôn vui vẻ, kiếm đc người chồng như ý và thành công trong công việc sau này nhé <3.</p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Vậy là chúng ta đã trở thành những học sinh lớp 12, và đây cũng là năm cuối cùng chúng ta được học chung với nhau. Chúng mình đã cùng nhau đoàn kết vượt qua mọi khó khăn. Tuy trong lớp đôi khi có những xích mích và bất đồng ý kiến nhưng sau cùng cả hai phái nữ và phái nam trong lớp mình đều có thể cùng giải quyết được. Đó điều là những kỉ niệm tuy bé nhỏ nhưng cũng thật đáng trân trọng. Điều này phải chăng chính là minh chứng cho những tình cảm học trò mà chúng ta đã có được hay sao. Cả bạn nữ à, ngày hôm nay là ngày phụ nữ VN, mình chúc các bạn nữ đều vui vẻ và tận hưởng ngày hôm này bằng những điều tuyệt vời nhất và hãy quan tâm đến những bạn nam chúng mình nhìu hơn nx nhé. :) “</p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Chúc các bạn nữ ăn no chóng lớn ,học hành chăm chỉ ,trẻ mãi không già”</p>
+    `,
+
+    `<div class="author">From @ddd with love <3</div>
+    <p>“Tớ chúc các bạn nữ có một 20/10 hạnh phúc , ngày càng xinh xắn , đạt đước nhiều thành công trong học tập, luôn nghĩ cho bản thân mình trước khi nghĩ đến cái khác , phải luôn yêu bản thân gia đình bạn bè nhé đặc biệt là phải đỗ đại học đấy 🥰”</p>
+    `,
+
+    `<div class="author">From @phn with love <3</div>
+    <p>“Mình chúc các bạn nữ lớp 12A2 học giỏi, xinh hơn, ai cũng đỗ được nguyện vọng 1 “</p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Hí, nhân ngày Phụ nữ Việt Nam, tớ chúc chị em luôn mạnh khoẻ, may mắn, hạnh phúc, làm và đạt được những điều mình mong muốn. Trong bất kì điều kiện và hoàn cảnh nào, các cậu luôn là những niềm tự hào của tụi con trai chúng tớ. 20/10 vui vẻ nhaaaa ^_-</p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Mừng ngày 20/10, mình chúc các bạn nữ cũng như cô giáo chủ nhiệm của lớp 12A2 ngày càng xinh xắn, học giỏi, hạnh phúc và đạt được điều mình mong muốn.”</p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Chúc các bạn đạt được mọi điều mong muốn trong tương lai <br>
+    Chúc các bạn mãi xinh học giỏi”
+    </p>
+    `,
+
+    `<div class="author">From @mn with love <3</div>
+    <p>“chúc sống lâu trăm tuổi”
+    </p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Chúc các bạn nữ lớp 12A2 và cô Thùy có một ngày 20-10 vui vẻ, đặc biệt là các bạn nữ ngày càng cố gắng và nỗ lực để đạt được mục tiêu của mình khi rời mái trường cấp 3.”
+    </p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Cuộc đời này có rất nhiều niềm vui, các cậu hãy luôn sống tích cực và mỉm cười kể cả khi gặp khó khăn nhé.”
+    </p>
+    `,
+
+    `<div class="author">From @zika with love <3</div>
+    <p>“Chúc các bạn nữ đỗ đại học, ngày càng xinh đẹp,luôn luôn vui tươi và thành công trong cuộc sống.Chúc các bạn có ngày 20/10 vui vẻ và ý nghĩa ,hạnh phúc”
+    </p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Chúc các bạn nữ nghe lời ông bà bố mẹ ,tuân thủ thông điệp 5k của bộ y tế”
+    </p>
+    `,
+
+    `<div class="author">From @ntct with love <3</div>
+    <p>“Nhân ngày 20/10 mình chúc các bạn nữ hay ăn chóng béo, tiền nhiều như kẹo, tình chặt như keo, dẻo dai như mèo, mịn màng trắng trẻo, sức khỏe như heo. Đùa tí gì căng-.- chúc các bạn nữ luôn tươi cười như hít phải khí N2O, bay bổng như H2, thăng hoa như I2, bản lĩnh như N2, và hiền hòa như H2O và trên hết 100% đỗ đại học yêu thích nhá”
+    </p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Đã là năm cuối được học chung với các bạn, chúc các bạn luôn may mắn và hạnh phúc trong những bước tiến tiếp theo của cuộc đời mình”
+    </p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Chúc các cậu có một ngày Phụ nữ Việt Nam thật là trọn vẹn, luôn hạnh phúc bên gia đình, những người thân yêu và chúng tớ nhé”
+    </p>
+    `,
+
+    `<div class="author">From @andanh with love <3</div>
+    <p>“Chúc các bạn luôn may mắn, luôn vui vẻ và hạnh phúc, có nhiều niềm vui trong cuộc đời”
+    </p>
+    `,
+]
+
 for (let i = 0; i < mainImg.length; i++) {
     getId(`mainImg${[i+1]}`).addEventListener("click", () => {
         getId('shadow_box').style.height = "100%";
         getId('shadow_box').style.width = "100%";
+        getId('shadow_box').style.pointerEvents = "auto";
+        getId('shadow_box').style.opacity = "1";
         //getId('box_content').style.display = "block";
-
+        getId('box_wish').innerHTML = wish_content[Math.floor(Math.random() * wish_content.length)];
         // up next: opacity phan box_content + time out de animation cua shadow_box load xong
         switch (i + 1) { // innerHTML let's go
             case 1:
@@ -113,6 +211,8 @@ for (let i = 0; i < mainImg.length; i++) {
 };
 
 getId("back").addEventListener("click", () => {
-    getId('shadow_box').style.height = "0";
-    getId('shadow_box').style.width = "0";
+    getId('shadow_box').style.height = "70%";
+    getId('shadow_box').style.width = "70%";
+    getId('shadow_box').style.opacity = "0";
+    getId('shadow_box').style.pointerEvents = "none";
 })

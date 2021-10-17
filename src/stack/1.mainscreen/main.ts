@@ -57,3 +57,10 @@ getId('main').addEventListener('touchend', () => {
     oldPos = [];
 })
 //
+
+window.addEventListener('resize', () => {
+    typewrite.style.top = `50%`;
+    typewrite.style.left = `50%`;
+    listmainImg.style.top = `50%`;
+    listmainImg.style.left = `50%`;
+})
