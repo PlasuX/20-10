@@ -112,32 +112,32 @@ var _loop_1 = function (i) {
                 break;
             case 2:
                 getId("box_hero_largeText").innerHTML = "Tú Anh";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Xin phép đại ca chưa ?';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/4. Nguyễn Tú Anh2.jpg') no-repeat center center";
                 break;
             case 3:
                 getId("box_hero_largeText").innerHTML = "Vân Anh";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Cute x3000';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/5. nguyễn vân anh2.jpg') no-repeat center center";
                 break;
             case 4:
                 getId("box_hero_largeText").innerHTML = "Thuỳ Dương";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Giọng hát của lớp là đây';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/8. đào thị thuỳ dương2.jpg') no-repeat center center";
                 break;
             case 5:
-                getId("box_hero_largeText").innerHTML = "Ánh dương";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_largeText").innerHTML = "Ánh Dương";
+                getId("box_hero_smallText").innerHTML = 'Huỷ diệt tất cả đề toán';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/9. trịnh ánh dương2.jpg') no-repeat center center";
                 break;
             case 6:
                 getId("box_hero_largeText").innerHTML = "Thanh Hằng";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Vui vẻ, năng động, yêu đời.';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/12. chu thanh hằng2.jpg') no-repeat center center";
                 break;
             case 7:
                 getId("box_hero_largeText").innerHTML = "Thuý Hiền";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'La Perfection';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/13. love2.jpg') no-repeat center center";
                 break;
             case 8:
@@ -147,52 +147,52 @@ var _loop_1 = function (i) {
                 break;
             case 9:
                 getId("box_hero_largeText").innerHTML = "Thảo Linh";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Boss lv. 999';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/25. đặng thảo linh2.jpg') no-repeat center center";
                 break;
             case 10:
                 getId("box_hero_largeText").innerHTML = "Khánh Linh";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Bạch tuyết';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/26. nguyễn khánh linh2.jpg') no-repeat center center";
                 break;
             case 11:
                 getId("box_hero_largeText").innerHTML = "Trang Linh";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Thời trang tiêu biểu Gen Z.';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/27. trần kim trang linh2.jpg') no-repeat center center";
                 break;
             case 12:
                 getId("box_hero_largeText").innerHTML = "TL. Khánh Linh";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Cái gì cơ, game thủ nữ không tồn tại á ???';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/28. trần lương khánh linh.jpg') no-repeat center center";
                 break;
             case 13:
                 getId("box_hero_largeText").innerHTML = "Mai Linh";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Pro dancer. 100%';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/29. trần ngọc mai linh1.jpg') no-repeat center center";
                 break;
             case 14:
                 getId("box_hero_largeText").innerHTML = "Ánh Minh";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Học giỏi, thân thiện, ngủ...à không không, nhầm';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/31. hoàng ánh minh2.jpg') no-repeat center center";
                 break;
             case 15:
                 getId("box_hero_largeText").innerHTML = "Minh Nguyệt";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = '2 thứ làm nên nhà vô địch: 360 thế võ và manga';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/34. đào minh nguyệt2.jpg') no-repeat center center";
                 break;
             case 16:
                 getId("box_hero_largeText").innerHTML = "Thanh Tâm";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Huệ chất lan tâm';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/37. nguyễn thanh tâm2.jpg') no-repeat center center";
                 break;
             case 17:
                 getId("box_hero_largeText").innerHTML = "Phương Thảo";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Người hạnh phúc nhất lớp.';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/39. phạm phương thảo2.jpg') no-repeat center center";
                 break;
             case 18:
                 getId("box_hero_largeText").innerHTML = "Thuỳ Trang";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = '"Top 10 nhân vật anime thông thái nhất"';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/43. phạm thuỳ trang2.jpg') no-repeat center center";
                 break;
             case 19:
@@ -202,7 +202,7 @@ var _loop_1 = function (i) {
                 break;
             case 20:
                 getId("box_hero_largeText").innerHTML = "Thuý Trúc";
-                getId("box_hero_smallText").innerHTML = 'Sample text';
+                getId("box_hero_smallText").innerHTML = 'Thông minh. Xinh xắn. Đáng yêu.';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/45. trần thuý trúc2.jpg') no-repeat center center";
                 break;
         }
