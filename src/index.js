@@ -118,7 +118,7 @@ var _loop_1 = function (i) {
                 break;
             case 2:
                 getId("box_hero_largeText").innerHTML = "Thu Thảo";
-                getId("box_hero_smallText").innerHTML = 'Nguyễn Thu Thảo';
+                getId("box_hero_smallText").innerHTML = 'Một con người tốt bụng, chăm chỉ và ko kém phần cute :3';
                 getId("box_wish_special").innerHTML = ''; //Thay bằng ảnh của thu thảo
                 getId("shadow_box").style.background = "url('./stack/1.mainscreen/img/38. nguyễn thu thảo.jpg') no-repeat center center";
                 break;
