@@ -94,7 +94,23 @@ const wish_content =  [
     </p>
     `,
 ]
-
+const wish_special = [
+    `<div class="author">To @Tâm with love <3</div>
+    <p>“Chúc em xinh hơn, đáng yêu hơn và thủ khoa đại học e nhé.”</p>
+    `,
+    `<div class="author">To @Phương Thảo with love <3</div>
+    <p>“Mình chúc bạn đỗ được ĐH Luật,luôn thành công trong con đường bạn chọn và luôn luôn hạnh phúc”</p>
+    `,
+    `<div class="author">To @Hằng & @Thanh Trúc with love <3</div>
+    <p>“Gửi đến hai cô bạn của tôi hãy luôn nở nụ cười trên môi khó khăn ko đc lùi bước phải vươn lên, cấm không được suy nghĩ linh tinh, luôn bên nhau nhé iu các bồ🔥”</p>
+    `,
+    `<div class="author">To @Trang with love <3</div>
+    <p>“Ngày 20/10 cho dù anh không được ở gần em, anh vẫn muốn ôm em thật lâu. Đừng buồn khi không có anh bên cạnh, hãy rực rỡ như những đóa hướng dương, hi vọng anh sẽ sớm được gặp em Anh yêu em <3”</p>
+    `,
+    `<div class="author">To @Ánh Dương with love <3</div>
+    <p>“Chúc bạn đỗ đại học ,luôn vui vẻ thành công với điều mình đã có và sẽ có trong tương lai và luôn nở nụ cười trong cuộc sống.”</p>
+    `,
+]
 for (let i = 0; i < mainImg.length; i++) {
     getId(`mainImg${[i+1]}`).addEventListener("click", () => {
         getId('shadow_box').style.height = "100%";
@@ -102,108 +118,128 @@ for (let i = 0; i < mainImg.length; i++) {
         getId('shadow_box').style.pointerEvents = "auto";
         getId('shadow_box').style.opacity = "1";
         //getId('box_content').style.display = "block";
-        getId('box_wish').innerHTML = wish_content[Math.floor(Math.random() * wish_content.length)];
+        getId('box_wish1').innerHTML = wish_content[Math.floor(Math.random() * wish_content.length)];
         // up next: opacity phan box_content + time out de animation cua shadow_box load xong
         switch (i + 1) { // innerHTML let's go
             case 1:
                 getId("box_hero_largeText").innerHTML = "Mai Anh";
                 getId("box_hero_smallText").innerHTML = '"Bob Ross của 12A2 <3"';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/1. Hoàng Mai Anh2.jpg') no-repeat center center";
                 // anh nen + loi chuc => xong !!
                 break;
             case 2:
-                getId("box_hero_largeText").innerHTML = "Tú Anh";
-                getId("box_hero_smallText").innerHTML = 'Xin phép đại ca chưa ?';
-                getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/4. Nguyễn Tú Anh2.jpg') no-repeat center center";
+                getId("box_hero_largeText").innerHTML = "Thu Thảo";
+                getId("box_hero_smallText").innerHTML = 'Nguyễn Thu Thảo';
+                getId("box_wish_special").innerHTML = ''; //Thay bằng ảnh của thu thảo
+                getId("shadow_box").style.background = "url('./stack/1.mainscreen/img/38. nguyễn thu thảo.jpg') no-repeat center center";
                 break;
             case 3:
                 getId("box_hero_largeText").innerHTML = "Vân Anh";
                 getId("box_hero_smallText").innerHTML = 'Cute x3000';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/5. nguyễn vân anh2.jpg') no-repeat center center";
                 break;
             case 4:
                 getId("box_hero_largeText").innerHTML = "Thuỳ Dương";
                 getId("box_hero_smallText").innerHTML = 'Giọng hát của lớp là đây';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/8. đào thị thuỳ dương2.jpg') no-repeat center center";
                 break;
             case 5:
                 getId("box_hero_largeText").innerHTML = "Ánh Dương";
                 getId("box_hero_smallText").innerHTML = 'Huỷ diệt tất cả đề toán';
+                getId("box_wish_special").innerHTML = wish_special[4];
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/9. trịnh ánh dương2.jpg') no-repeat center center";
                 break;
             case 6:
                 getId("box_hero_largeText").innerHTML = "Thanh Hằng";
                 getId("box_hero_smallText").innerHTML = 'Vui vẻ, năng động, yêu đời.';
+                getId("box_wish_special").innerHTML = wish_special[2];
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/12. chu thanh hằng2.jpg') no-repeat center center";
                 break;
             case 7:
                 getId("box_hero_largeText").innerHTML = "Thuý Hiền";
                 getId("box_hero_smallText").innerHTML = 'La Perfection';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/13. love2.jpg') no-repeat center center";
                 break;
             case 8:
                 getId("box_hero_largeText").innerHTML = "Quỳnh Hoa";
                 getId("box_hero_smallText").innerHTML = 'Đệ quy, đệ quy, đệ qu...';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/14. hồ quỳnh hoa2.jpg') no-repeat center center";
                 break;
             case 9:
                 getId("box_hero_largeText").innerHTML = "Thảo Linh";
                 getId("box_hero_smallText").innerHTML = 'Boss lv. 999';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/25. đặng thảo linh2.jpg') no-repeat center center";
                 break;
             case 10:
                 getId("box_hero_largeText").innerHTML = "Khánh Linh";
                 getId("box_hero_smallText").innerHTML = 'Bạch tuyết';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/26. nguyễn khánh linh2.jpg') no-repeat center center";
                 break;
             case 11:
                 getId("box_hero_largeText").innerHTML = "Trang Linh";
                 getId("box_hero_smallText").innerHTML = 'Thời trang tiêu biểu Gen Z.';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/27. trần kim trang linh2.jpg') no-repeat center center";
                 break;
             case 12:
                 getId("box_hero_largeText").innerHTML = "TL. Khánh Linh";
                 getId("box_hero_smallText").innerHTML = 'Cái gì cơ, game thủ nữ không tồn tại á ???';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/28. trần lương khánh linh.jpg') no-repeat center center";
                 break;
             case 13:
                 getId("box_hero_largeText").innerHTML = "Mai Linh";
                 getId("box_hero_smallText").innerHTML = 'Pro dancer. 100%';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/29. trần ngọc mai linh1.jpg') no-repeat center center";
                 break;
             case 14:
                 getId("box_hero_largeText").innerHTML = "Ánh Minh";
                 getId("box_hero_smallText").innerHTML = 'Học giỏi, thân thiện, ngủ...à không không, nhầm';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/31. hoàng ánh minh2.jpg') no-repeat center center";
                 break;
             case 15:
                 getId("box_hero_largeText").innerHTML = "Minh Nguyệt";
                 getId("box_hero_smallText").innerHTML = '2 thứ làm nên nhà vô địch: 360 thế võ và manga';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/34. đào minh nguyệt2.jpg') no-repeat center center";
                 break;
             case 16:
                 getId("box_hero_largeText").innerHTML = "Thanh Tâm";
                 getId("box_hero_smallText").innerHTML = 'Huệ chất lan tâm';
+                getId("box_wish_special").innerHTML = wish_special[0];
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/37. nguyễn thanh tâm2.jpg') no-repeat center center";
                 break;
             case 17:
                 getId("box_hero_largeText").innerHTML = "Phương Thảo";
                 getId("box_hero_smallText").innerHTML = 'Người hạnh phúc nhất lớp.';
+                getId("box_wish_special").innerHTML = wish_special[1];
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/39. phạm phương thảo2.jpg') no-repeat center center";
                 break;
             case 18:
                 getId("box_hero_largeText").innerHTML = "Thuỳ Trang";
                 getId("box_hero_smallText").innerHTML = '"Top 10 nhân vật anime thông thái nhất"';
+                getId("box_wish_special").innerHTML = wish_special[3];
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/43. phạm thuỳ trang2.jpg') no-repeat center center";
                 break;
             case 19:
                 getId("box_hero_largeText").innerHTML = "Thanh Trúc";
                 getId("box_hero_smallText").innerHTML = 'красивая девушка';
+                getId("box_wish_special").innerHTML = wish_special[2];
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/44. nguyễn thanh trúc2.jpg') no-repeat center center";
                 break;
             case 20:
                 getId("box_hero_largeText").innerHTML = "Thuý Trúc";
                 getId("box_hero_smallText").innerHTML = 'Thông minh. Xinh xắn. Đáng yêu.';
+                getId("box_wish_special").innerHTML = '';
                 getId("shadow_box").style.background = "url('./stack/2.shadow_box/img2/45. trần thuý trúc2.jpg') no-repeat center center";
                 break;
         }

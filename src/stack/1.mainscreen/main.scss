@@ -66,111 +66,113 @@
             transform: translate(-50%, -50%) scale(0.875);
         }
         #mainImg1 {
-            top: calc(50% + 150px);
+            top: calc(50% + 200px); // -100
             left: 50%;
         }
 
         #mainImg2 {
-            top: calc(50% - 150px);
+            top: calc(50% - 200px);
             left: 50%;
         }
 
         #mainImg3 {
             top: 50%;
-            left: calc(50% + 150px);
+            left: calc(50% + 200px);
         }
 
         #mainImg4 {
             top: 50%;
-            left: calc(50% - 150px);
+            left: calc(50% - 200px);
         }
 
         #mainImg5 {
-            top: calc(50% + 100px);
-            left: calc(50% + 100px);
+            top: calc(50% + 150px);
+            left: calc(50% + 150px);
         }
 
         #mainImg6 {
-            top: calc(50% + 100px);
-            left: calc(50% - 100px);
+            top: calc(50% + 150px);
+            left: calc(50% - 150px);
         }
 
         #mainImg7 {
-            top: calc(50% - 100px);
-            left: calc(50% + 100px);
+            top: calc(50% - 150px);
+            left: calc(50% + 150px);
         }
         #mainImg8 {
-            top: calc(50% + 300px);
+            top: calc(50% + 350px);
             left: 50%;
         }
 
         #mainImg9 {
-            top: calc(50% - 300px);
+            top: calc(50% - 350px);
             left: 50%;
         }
 
         #mainImg10 {
             top: 50%;
-            left: calc(50% + 300px);
+            left: calc(50% + 350px);
         }
 
         #mainImg11 {
             top: 50%;
-            left: calc(50% - 300px);
+            left: calc(50% - 350px);
         }
 
         #mainImg12 {
-            top: calc(50% + 250px);
-            left: calc(50% + 150px);
+            top: calc(50% + 300px);
+            left: calc(50% + 200px);
         }
 
         #mainImg13 {
-            top: calc(50% + 250px);
-            left: calc(50% - 150px);
+            top: calc(50% + 300px);
+            left: calc(50% - 200px);
         }
 
         #mainImg14 {
-            top: calc(50% - 250px);
-            left: calc(50% + 150px);
+            top: calc(50% - 300px);
+            left: calc(50% + 200px);
         }
 
         #mainImg15 {
-            top: calc(50% - 250px);
-            left: calc(50% - 150px);
+            top: calc(50% - 300px);
+            left: calc(50% - 200px);
             img {
                 height: 75px;
-                width: fit-content;
+                //sửa width -> ảnh dãn
+                width: auto;
             }
         }
 
         #mainImg16 {
-            top: calc(50% - 100px);
-            left: calc(50% - 100px);
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
         }
 
         #mainImg17 {
-            top: calc(50% - 150px);
-            left: calc(50% - 250px);
+            top: calc(50% - 200px);
+            left: calc(50% - 300px);
 
             img {
                 height: 75px;
-                width: fit-content;
+                //sửa width -> ảnh dãn
+                width: auto;
             }
         }
 
         #mainImg18 {
-            top: calc(50% + 150px);
-            left: calc(50% + 250px);
+            top: calc(50% + 200px);
+            left: calc(50% + 300px);
         }
 
         #mainImg19 {
-            top: calc(50% + 150px);
-            left: calc(50% - 250px);
+            top: calc(50% + 200px);
+            left: calc(50% - 300px);
         }
 
         #mainImg20 {
-            top: calc(50% - 150px);
-            left: calc(50% + 250px);
+            top: calc(50% - 200px);
+            left: calc(50% + 300px);
         }
 
         // #mainImg21 chưa có ảnh -> thu thảo
